@@ -1,0 +1,37 @@
+.social-links {
+    &__item {
+        @include links-styles;
+        transition-duration: .5s;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    .facebook {
+        &::before {
+            @include social-links-pseudo(url(../icons/Facebook.svg));
+            width: 16px;
+            height: 30px;
+            margin: calc(50% - 15px) auto 0;
+        }
+    }
+    .twitter {
+        &::before {
+            @include social-links-pseudo(url(../icons/Twitter.svg));
+            width: 28px;
+            height: 23px;
+            margin: calc(50% - 11px) auto 0;
+        }
+    }
+    .instagram {
+        &::before {
+            @include social-links-pseudo(url(../icons/Instagram.svg));
+            background-repeat: no-repeat;
+            width: 35px;
+            height: 27px;
+            margin: calc(50% - 14px) 0 0 auto;
+        }
+    }
+}

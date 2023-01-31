@@ -1,0 +1,19 @@
+.scroll-up {
+    position: fixed;
+    color: #FFAC1C;
+    font-size: 3rem;
+    right: 80px;
+    bottom: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+    .scroll-up {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .scroll-up {
+        right: 40px;
+    }
+}

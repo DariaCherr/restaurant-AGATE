@@ -1,0 +1,43 @@
+.menu {
+    line-height: 62px;
+    &__item {
+        font-size: 0.9rem;
+        color: #fff;
+    }
+    &__item:not(:last-child)::after {
+        content: "";
+        width: 20px;
+        height: 1px;
+        background-color: #D8D5D5;
+        color: #D8D5D5;
+        margin: 0 25px 5px;
+        display: inline-block;
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    .menu {
+        line-height: 40px;
+        &__item {
+            font-size: $small-font;
+        }
+        &__item:not(:last-child)::after {
+            width: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .menu {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item:not(:last-child)::after {
+            margin: 5px 0;
+            transform: rotate(180deg);
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.about-chef {
+    &__photo {
+        max-width: 398px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__text {
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+    &__description {
+        max-width: 939px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-chef {
+        &__photo {
+            max-width: 282px;
+        }
+        h2 {
+            font-size: 1.4rem;
+        }
+        &__text {
+            font-size: 0.85rem;
+        }
+        &__description {
+            max-width: 691px;
+            font-size: 0.85rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-chef {
+        &__photo {
+            max-width: 251px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        &__text {
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+        }
+        &__description {
+            max-width: 580px;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .about-chef {
+        &__description {
+            max-width: 510px;
+            font-size: $small-font;
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .about-chef {
+        &__description {
+            max-width: 460px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-chef {
+        &__description {
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .about-chef {
+        &__photo {
+            max-width: 220px;
+        }
+        h2 {
+            font-size: 1rem;
+        }
+        &__text {
+            font-size: $small-font;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-chef {
+        &__description {
+            max-width: 350px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.selected-dishes {
+    h2 {
+        margin-bottom: 30px;
+    }
+    &__description {
+        margin-bottom: 60px;
+        font-weight: 300;
+        color: $secondary-color;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .selected-dishes {
+        h2 {
+            font-size: 1.4rem;
+        }
+        &__description {
+            margin-bottom: 48px;
+            font-size: 0.88rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .selected-dishes {
+        padding: 70px 24px 70px 52px;
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        &__description {
+            margin-bottom: 58px;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .selected-dishes {
+        padding: 70px 30px;
+        &__description {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .selected-dishes {
+        h2 {
+            font-size: 1rem;
+        }
+    }
+}

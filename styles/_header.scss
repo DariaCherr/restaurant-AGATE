@@ -1,0 +1,36 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.6);
+    &__container {
+        max-width: 1920px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 45px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    .header {
+        &__container {
+            padding: 13px 31px 13px 42px;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        &__container {
+            padding: 8px 13px 8px 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .header {
+        &__container {
+            flex-direction: column;
+        }
+    }
+}

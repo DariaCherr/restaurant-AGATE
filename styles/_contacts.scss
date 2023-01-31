@@ -1,0 +1,41 @@
+.contacts {
+    margin-bottom: 60px;
+    a {
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contacts {
+        margin-bottom: 50px;
+        a {
+            font-size: $base-font;
+        }
+        &__item:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contacts {
+        a {
+            font-size: $small-font;
+        }
+        &__item:not(:last-child) {
+            margin-bottom: 3px;
+        }
+    }
+}

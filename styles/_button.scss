@@ -1,0 +1,63 @@
+.button--white {
+    @include button-styles;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    transition-duration: .6s;
+    &:hover {
+        background-color: $button-color;
+        border: $button-color;
+    }
+}
+
+.button--black {
+    @include button-styles;
+    border: 2px solid $text-color;
+    color: $text-color;
+    font-family: $font;
+    transition-duration: .6s;
+    &:hover {
+        background-color: $button-color;
+        border: $button-color;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    .button {
+        width: 248px;
+        height: 48px;
+        font-size: 0.68rem;
+        line-height: 48px;
+        &--white {
+            margin: 63px auto 0;
+        }
+        &--black {
+            margin: 45px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 847px) {
+    .button {
+        &--white {
+            margin: 66px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        &--black {
+            margin: 61px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 598px) {
+    .button {
+        width: 208px;
+        height: 38px;
+        font-size: 0.58rem;
+        line-height: 38px;
+    }
+}

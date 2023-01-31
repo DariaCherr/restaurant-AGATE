@@ -1,0 +1,54 @@
+.connections {
+    padding: 100px 0;
+    background-color: #262626;
+    h3 {
+        font-size: 2.6rem;
+        color: #fff;
+        margin-bottom: 60px;
+    }
+    &__date {
+        color: #B1B1B1;
+        font-weight: 300;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .connections {
+        padding: 80px 0;
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+        &__date {
+            font-size: 0.75rem;
+            margin-bottom: 47px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .connections {
+        padding: 70px 0;
+        h3 {
+            font-size: $heading-font;
+            margin-bottom: 40px;
+        }
+        &__date {
+            font-size: $small-font;
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .connections {
+        h3 {
+            font-size: 1.2rem;
+        }
+        &__date {
+            font-size: $small-font;
+            margin-bottom: 35px;
+        }
+    }
+}

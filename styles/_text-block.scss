@@ -1,0 +1,52 @@
+.text-block {
+    &__description {
+        font-size: 1.2rem;
+        max-width: 941px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .text-block {
+        &__description {
+            font-size: 0.9rem;
+            max-width: 602px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-block {
+        &__description {
+            font-size: 0.8rem;
+            max-width: 541px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-block {
+        &__description {
+            font-size: $small-font;
+            max-width: 480px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-block {
+        &__description {
+            font-size: 0.6rem;
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .text-block {
+        &__description {
+            font-size: 0.6rem;
+            max-width: 350px;
+        }
+    }
+}

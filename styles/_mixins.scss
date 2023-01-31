@@ -1,0 +1,66 @@
+@mixin button-styles {
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+    margin: 60px auto 0;
+}
+
+@mixin column-styles {
+    text-align: left;
+    max-width: 360px;
+    width: calc((100% - 48px*2)/3);
+    vertical-align: top;
+    position: relative;
+}
+
+@mixin product-card-pseudo($bg-color, $content: "") {
+    content: $content;
+    background-color: $bg-color;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    left: -30px;
+    top: -30px;
+    color: #fff;
+    font-size: 0.56rem;
+    text-align: center;
+    line-height: 58px;
+}
+
+@mixin product-card-pseudo2 {
+    width: 46px;
+    height: 46px;
+    font-size: 0.5rem;
+    line-height: 46px;
+    left: -20px;
+    top: -20px;
+}
+
+@mixin product-card-pseudo3 {
+    width: 56px;
+    height: 56px;
+    font-size: 0.56rem;
+    line-height: 56px;
+    left: -30px;
+    top: -30px;
+}
+
+@mixin links-styles {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+@mixin social-links-pseudo($bg-image: url()) {
+    content: "";
+    display: block;
+    background-image: ($bg-image);
+}

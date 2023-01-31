@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/7432addfe6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico.svg" type="image/x-icon">
+    <title>Ресторан AGATE</title>
+    echo "# restaurant-AGATE" >> README.md git init git add README.md git commit -m "first commit" git branch -M main git remote add origin https://github.com/DariaCherr/restaurant-AGATE.git git push -u origin main
+</head>
+
+<body>
+    <div class="container-background" id="scroll-to">
+        <header class="header">
+            <div class="header__container">
+                <a href="#communication" class="logo">AGATE</a>
+                <nav class="menu">
+                    <a href="#about" class="menu__item">О ресторане</a>
+                    <a href="#menu" class="menu__item">Меню</a>
+                    <a href="#communication" class="menu__item">Контакты</a>
+                </nav>
+            </div>
+        </header>
+        <section class="banner">
+            <h1 class="banner__title">РЕСТОРАН АВТОРСКОЙ КУХНИ</h1>
+            <p class="banner__description">Легкая атмосфера, европейская и азиатская кухня</p>
+            <a href="#communication" class="button button--white">Связаться с нами</a>
+        </section>
+    </div>
+
+    <main>
+        <section class="text-block background-green" id="about">
+            <div class="wrapper">
+                <p class="text-block__description">Мы понравимся вам своей легкой атмосферой, уровнем кухни и подачей блюд. Мы любим аристократичную простоту в интерьере, хорошую музыку и неповторимый ризотто нашего шефа, Максима Болова.</p>
+            </div>
+        </section>
+
+        <section class="photo-gallery">
+            <div class="wrapper">
+                <div class="box">
+                    <div class="photo-gallery__item">
+                        <div class="photo-gallery__photo">
+                            <img src="img/photo1.png" alt="Photo of the restaurant">
+                        </div>
+                        <div class="photo-gallery__photo">
+                            <img src="img/photo2.png" alt="Photo of the dish">
+                        </div>
+                    </div>
+
+                    <div class="photo-gallery__item">
+                        <div class="photo-gallery__photo">
+                            <img src="img/photo3.png" alt="Photo of the dish">
+                        </div>
+                        <div class="photo-gallery__photo">
+                            <img src="img/photo4.png" alt="Photo of the dish">
+                        </div>
+                    </div>
+
+                    <div class="photo-gallery__item">
+                        <div class="photo-gallery__photo">
+                            <img src="img/photo5.png" alt="Photo of the restaurant">
+                        </div>
+                        <div class="photo-gallery__photo">
+                            <img src="img/photo6.png" alt="Photo of the dish">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="selected-dishes" id="menu">
+            <div class="wrapper">
+                <h2 class="heading">Избранные блюда нашего меню</h2>
+                <p class="selected-dishes__description">Осеннее меню от шеф повара</p>
+                <div class="container">
+
+                    <article class="dish-info dish-info--red">
+                        <div class="dish-info__picture">
+                            <img src="img/dish1.jpg" alt="Pumpkin soup" class="dish-info__photo">
+                        </div>
+                        <div class="dish-info__description">
+                            <h4 class="dish-info__title">Тыквенный суп</h4>
+                            <p class="dish-info__text">Осенний тыквенный суп. В игридиентах тыква, шампиньоны, щепотка мускатного ореха.</p>
+                            <p class="dish-info__price">1980р.</p>
+                        </div>
+                    </article>
+
+                    <article class="dish-info dish-info--green">
+                        <div class="dish-info__picture">
+                            <img src="img/dish2.jpg" alt="Papardelle" class="dish-info__photo">
+                        </div>
+                        <div class="dish-info__description">
+                            <h4 class="dish-info__title">Папарделле</h4>
+                            <p class="dish-info__text">Итальянская паста с богатым вкусом свеклы и томатным песто, подается с базиликом и горошком.</p>
+                            <p class="dish-info__price">1400р.</p>
+                        </div>
+                    </article>
+
+                    <article class="dish-info dish-info--orange">
+                        <div class="dish-info__picture">
+                            <img src="img/dish3.jpg" alt="Lynch salad" class="dish-info__photo">
+                        </div>
+                        <div class="dish-info__description">
+                            <h4 class="dish-info__title">Линч салат</h4>
+                            <p class="dish-info__text">Питательный утренний салат - это просто белковая бомба для любителей фитнеса.</p>
+                            <p class="dish-info__price">1300р.</p>
+                        </div>
+                    </article>
+
+                </div>
+                <a class="button button--black" href="#">Просмотреть меню</a>
+            </div>
+        </section>
+
+        <section class="about-chef background-green">
+            <div class="wrapper">
+                <img src="img/Chef.png" alt="photo of the chef" class="about-chef__photo ">
+                <h2 class="heading">Максим Болов</h2>
+                <p class="about-chef__text">Шев повар AGATE</p>
+                <p class="about-chef__description">Максим - ученик известного шеф повара Ерика Крауа. Принимает участие в крупнейших воркшопах, работал в ресторанах Франции, Бельгии и Финляндии. У Максима всегда свежее авторское видение меню.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="connections" id="communication">
+        <h3 class="connections__title">Свяжитесь с нами</h3>
+        <ul class="contacts">
+            <li class="contacts__item">
+                <a href="tel:+11234567890">+1 123 456 78 90</a>
+            </li>
+            <li class="contacts__item">
+                <a href="mailto:agate@yandex.com">agate@yandex.com</a>
+            </li>
+            <li class="contacts__item">
+                <a href="https://goo.gl/maps/AStEeKjaTVKNojiq6">Обводной канал, 75а. Санкт-Петербург</a>
+            </li>
+        </ul>
+        <p class="connections__date">Мы открыты ежедневно c 12:00 - 12:00</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" class="social-links__item facebook"></a>
+            <a href="https://twitter.com/" class="social-links__item twitter"></a>
+            <a href="https://www.instagram.com/" class="social-links__item instagram"></a>
+        </div>
+    </footer>
+
+    <a href="#scroll-to" class="scroll-up">
+        <i class="fa-solid fa-circle-chevron-up"></i>
+    </a>
+
+</body>
+
+</html>
